@@ -1,0 +1,38 @@
+[
+    {
+      "id": "1",
+      "name": "Google LLC",
+      "details": "Google LLC is an American multinational technology company that specializes in Internet-related services and products, which include online advertising technologies, a search engine, cloud computing, software, and hardware.",
+      "image": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+    },
+    {
+      "id": "2",
+      "name": "Netflix, Inc.",
+      "details": "Netflix, Inc. is an American over-the-top content platform and production company headquartered in Los Gatos, California.",
+      "image": "https://logos-download.com/wp-content/uploads/2016/03/Netflix_logo.png"
+    },
+    {
+      "id": "3",
+      "name": "Marvel Entertainment, LLC",
+      "details": "Marvel Entertainment, LLC is an American entertainment company that is a subsidiary of Walt Disney Studios.",
+      "image": "https://logos-download.com/wp-content/uploads/2016/05/Marvel_logo_logotype.png"
+    },
+    {
+      "id": "4",
+      "name": "Tesla, Inc.",
+      "details": "Tesla, Inc. is an American electric vehicle and clean energy company based in Palo Alto, California.",
+      "image": "https://www.tesla.com/sites/default/files/images/tesla_logo_red_128.png"
+    },
+    {
+      "id": "5",
+      "name": "Amazon.com, Inc.",
+      "details": "Amazon.com, Inc. is an American multinational technology company based in Seattle, Washington. It is primarily focused on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
+      "image": "https://logos-download.com/wp-content/uploads/2016/03/Amazon_Logo_2000.png"
+    },
+    {
+      "id": "6",
+      "name": "Facebook, Inc.",
+      "details": "Facebook, Inc. is an American social media and technology company based in Menlo Park, California. It was founded by Mark Zuckerberg, along with fellow Harvard College students and roommates Eduardo Saverin, Andrew McCollum, Dustin Moskovitz, and Chris Hughes.",
+      "image": "https://logos-download.com/wp-content/uploads/2016/09/Facebook_logo_transparent_png.png"
+    }
+]
