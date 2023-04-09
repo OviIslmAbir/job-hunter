@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 
 const FeaturedJobs = (props) => {
-    const {name, image, jobPost} = props.company
+    const navigate = useNavigate()
+    const {id ,name, image, jobPost} = props.company
     return (
         <div>
             <div className="col">
@@ -18,7 +20,7 @@ const FeaturedJobs = (props) => {
                        <p className="card-text">{jobPost.location}</p>
                        <p className="card-text">Salary: {jobPost.salary}</p>
                     </div>
-                    <button style={{background: "linear-gradient(90deg, #7E90FE 0%, #9873FF 100%)"}} className='btn text-white'>View details</button>
+                    <button style={{background: "linear-gradient(90deg, #7E90FE 0%, #9873FF 100%)"}} className='btn text-white' onClick={() => navigate(`/${id}`)}>View details</button>
                 </div>
                 </div>
              </div>

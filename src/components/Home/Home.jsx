@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Job from '../jobCatagory/Job';
 import { useLoaderData } from 'react-router-dom';
 import FeaturedJobs from '../featuredJobs/FeaturedJobs';
+
 const Home = () => {
     const [jobs , setJobs] = useState([])
     useEffect(()=>{
