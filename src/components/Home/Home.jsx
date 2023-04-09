@@ -11,11 +11,11 @@ const Home = () => {
     },[])
     const companies = useLoaderData()
     return (
-        <div className='container'>
+        <div className='container my-3'>
             {/* banner section start */}
             <div className="row align-items-center mt-lg-0 mt-5">
                 <div className="col-lg-6">
-                    <h1>One Step Closer To <span className='text-danger'>Your Dream Job</span></h1>
+                    <h1>One Step Closer To <span style={{color:"#7E90FE"}}>Your Dream Job</span></h1>
                     <p>Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.</p>
                     <button style={{background: "linear-gradient(90deg, #7E90FE 0%, #9873FF 100%)"}} className='btn text-white'>Get Started</button>
                 </div>

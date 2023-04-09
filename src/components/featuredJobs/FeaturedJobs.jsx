@@ -11,14 +11,14 @@ const FeaturedJobs = (props) => {
                     <h4 className='card-title'>{jobPost.name}</h4>
                     <h6 class="card-text text-secondary">{name}</h6>
                     <div className='my-4'>
-                        <span className='border border-danger me-2 p-2 rounded  '>{jobPost.work}</span>
-                        <span className='border border-danger p-2  rounded'>Full Time</span>
+                        <span style={{border:"1px solid #7E90FE", color:"#7E90FE"}} className='me-2 p-2 rounded  '>{jobPost.work}</span>
+                        <span style={{border:"1px solid #7E90FE", color:"#7E90FE"}} className='p-2  rounded'>Full Time</span>
                     </div>
                     <div className='d-flex gap-4'>
                        <p class="card-text">{jobPost.location}</p>
                        <p class="card-text">Salary: {jobPost.salary}</p>
                     </div>
-                    <button style={{background: "linear-gradient(90deg, #7E90FE 0%, #9873FF 100%)"}} className='btn'>View details</button>
+                    <button style={{background: "linear-gradient(90deg, #7E90FE 0%, #9873FF 100%)"}} className='btn text-white'>View details</button>
                 </div>
                 </div>
              </div>
