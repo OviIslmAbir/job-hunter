@@ -46,7 +46,7 @@ const Home = () => {
                     <h1>Featured Jobs</h1>
                     <p>Explore thousands of job opportunities with all the information you need. Its your future</p>
                 </div>
-                <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div className="row row-cols-1 row-cols-md-2 g-4">
                     {
                         companies.map(company => <FeaturedJobs key={company.id} company={company}></FeaturedJobs>)
                     }

@@ -2,35 +2,34 @@
     {
       "id": "1",
       "name": "Google LLC",
-      "details": "Google LLC is an American multinational technology company that specializes in Internet-related services and products, which include online advertising technologies, a search engine, cloud computing, software, and hardware.",
-      "image": "./img/company/google-1-1 1.png",
+      "image": "./img/company/google.jpg",
       "jobPost": {
           "name": "Software Engineer",
           "work": "remote",
           "description": "We are looking for a talented software engineer to join our team and help us build the next generation of Google products. The ideal candidate will have experience with a variety of programming languages and a passion for creating high-quality, scalable software.",
           "location": "Mountain View, CA",
           "salary": " 100K - 150K",
-          "requirements": "Bachelor's or higher degree in Computer Science or related field, experience with programming languages such as Java, C++, Python, and JavaScript, experience with distributed systems and/or cloud computing, excellent communication skills"
+          "requirements": "Bachelor's or higher degree in Computer Science or related field, experience with programming languages such as Java, C++, Python, and JavaScript, experience with distributed systems and/or cloud computing, excellent communication skills",
+          "Experiences": "2-3 Years in this field."
       }
     },
     {
       "id": "2",
       "name": "Netflix",
-      "details": "Netflix, Inc. is an American over-the-top content platform and production company headquartered in Los Gatos, California.",
-      "image": "./img/company/netflix-4 1.png",
+      "image": "./img/company/netflix.png",
       "jobPost": {
           "name": "Content Analyst",
           "work" : "onsite",
           "description": "We are seeking a talented Content Analyst to join our team and help us improve the quality and relevance of the content on our platform. The ideal candidate will have a deep understanding of the entertainment industry and experience working with data and analytics.",
           "location": "Los Angeles, CA",
           "salary": " 100K - 200K",
-          "requirements": "Bachelor's or higher degree in a related field, experience in the entertainment industry and/or working with data and analytics, excellent communication skills"
+          "requirements": "Bachelor's or higher degree in a related field, experience in the entertainment industry and/or working with data and analytics, excellent communication skills",
+          "Experiences": "3-4 Years in this field."
         }
     },
     {
       "id": "3",
       "name": "Marvel Entertainment, LLC",
-      "details": "Marvel Entertainment, LLC is an American entertainment company that is a subsidiary of Walt Disney Studios.",
       "image": "./img/company/Marvel_Studios_logo.jpg",
       "jobPost": {
         "name": "Comic Book Writer",
@@ -38,28 +37,28 @@
         "description": "We are looking for a talented comic book writer to join our team and help us create the next generation of Marvel superheroes. The ideal candidate will have a passion for storytelling and a deep knowledge of the Marvel universe.",
         "location": "New York, NY",
         "salary": " 150K - 250K",
-        "requirements": "Experience writing comic books, a deep knowledge of the Marvel universe, excellent communication skills"
+        "requirements": "Experience writing comic books, a deep knowledge of the Marvel universe, excellent communication skills",
+        "Experiences": "1-2 Years in this field."
       }
 
     },
     {
       "id": "4",
       "name": "Tesla",
-      "details": "Tesla, Inc. is an American electric vehicle and clean energy company based in Palo Alto, California.",
-      "image": "./img/company/tesla-9 1.png",
+      "image": "./img/company/tesla-logo-free-download-free-vector.jpg",
       "jobPost": {
           "name": "Hardware Engineer",
           "work" : "onsite",
           "description": "We are seeking a talented Hardware Engineer to join our team and help us design and develop cutting-edge hardware solutions for our electric vehicles. The ideal candidate will have experience in hardware engineering and a passion for sustainable transportation.",
           "location": "Palo Alto, CA",
           "salary": " 200K - 350K",
-          "requirements": "Bachelor's or higher degree in Electrical Engineering or related field, experience in hardware engineering, knowledge of automotive systems and power electronics, excellent communication skills"
+          "requirements": "Bachelor's or higher degree in Electrical Engineering or related field, experience in hardware engineering, knowledge of automotive systems and power electronics, excellent communication skills",
+          "Experiences": "3-4 Years in this field."
       }
     },
     {
       "id": "5",
       "name": "Amazon.com",
-      "details": "Amazon.com, Inc. is an American multinational technology company based in Seattle, Washington. It is primarily focused on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
       "image": "./img/company/amazon.jpg",
       "jobPost": {
           "name": "Software Development Engineer",
@@ -67,13 +66,13 @@
           "description": "We are seeking a talented software development engineer to join our team and help us build scalable and high-performance software solutions. The ideal candidate will have a strong background in computer science and experience with distributed systems.",
           "location": "Seattle, WA",
           "salary": " 200K - 250K",
-          "requirements": "Bachelor's or higher degree in Computer Science or related field, experience with distributed systems, proficiency in programming languages such as Java, C++, or Python, excellent communication skills"
+          "requirements": "Bachelor's or higher degree in Computer Science or related field, experience with distributed systems, proficiency in programming languages such as Java, C++, or Python, excellent communication skills",
+          "Experiences": "1-2 Years in this field."
         }
     },
     {
       "id": "6",
       "name": "Facebook",
-      "details": "Facebook, Inc. is an American social media and technology company based in Menlo Park, California. It was founded by Mark Zuckerberg, along with fellow Harvard College students and roommates Eduardo Saverin, Andrew McCollum, Dustin Moskovitz, and Chris Hughes.",
       "image": "./img/company/Facebook_New_Logo_(2015).svg.png",
       "jobPost": {
           "name": "Product Manager",
@@ -81,7 +80,9 @@
           "description": "We are seeking a talented Product Manager to join our team and help us develop innovative products that meet the needs of our users. The ideal candidate will have experience in product management, a deep understanding of user needs, and excellent analytical skills.",
           "location": "Menlo Park, CA",
           "salary": " 150K - 200K",
-          "requirements": "Bachelor's or higher degree in a related field, experience in product management, a deep understanding of user needs, excellent analytical skills"
+          "requirements": "Bachelor's or higher degree in a related field, experience in product management, a deep understanding of user needs, excellent analytical skills",
+          "Experiences": "2-3 Years in this field."
+
       }
     }
 ]

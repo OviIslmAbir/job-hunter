@@ -8,7 +8,7 @@ const FeaturedJobs = (props) => {
         <div>
             <div className="col">
                 <div style={{border:"none"}} className="card shadow p-3 h-100">
-                <img style={{width:"150px", height:"60px"}} src={image} className="card-img-top ps-2" alt="..."/>
+                <img style={{width:"150px", height:"70px"}} src={image} className="card-img-top" alt="..."/>
                 <div style={{height:"250px"}} className="card-body mt-2">
                     <h4 className='card-title'>{jobPost.name}</h4>
                     <h6 className="card-text text-secondary">{name}</h6>
