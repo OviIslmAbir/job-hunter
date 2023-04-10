@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
-
+import { CurrencyDollarIcon, BriefcaseIcon, PhoneIcon, EnvelopeIcon, MapPinIcon} from '@heroicons/react/24/solid'
 const JobDerails = () => {
     const dynamic = useParams()
     const companies = useLoaderData()
@@ -9,7 +9,7 @@ const JobDerails = () => {
         <div className='container mt-5'>
             <h1 className='text-center'>Job details</h1>
             <div className="row">
-                <div className="col-lg-7 mt-3">
+                <div className="col-lg-8 mt-3">
                     <div>
                         <h1>{company.name}</h1>
                     </div>
@@ -33,8 +33,21 @@ const JobDerails = () => {
                         <p>{company.jobPost.Experiences}</p>
                     </div>
                 </div>
-                <div className="col-lg-5">
-
+                <div  className="col-lg-4 mt-5">
+                    <h4>Job details</h4>
+                    <hr />
+                    <div>
+                        <h6 className='my-3 d-flex align-items-center gap-2'><CurrencyDollarIcon style={{height:"25px", width:"25px"}}></CurrencyDollarIcon> <span>Salary : {company.jobPost.salary}  (Per Month)</span></h6>
+                        <h6 className='d-flex align-items-center gap-2'><BriefcaseIcon style={{height:"25px", width:"25px"}}></BriefcaseIcon> <span>Job Title : {company.jobPost.name}</span></h6>
+                    </div>
+                    <h4 className='mt-3'>Contact Information</h4>
+                    <hr />
+                    <div>
+                        <h6 className='my-3 d-flex align-items-center gap-2'><PhoneIcon style={{height:"25px", width:"25px"}}></PhoneIcon> <span>Phone : 01750-00 00 00</span></h6>
+                        <h6 className='my-3 d-flex align-items-center gap-2'><EnvelopeIcon style={{height:"25px", width:"25px"}}></EnvelopeIcon> <span>Email : info@gmail.com</span></h6>
+                        <h6 className='my-3 d-flex align-items-center gap-2'><MapPinIcon style={{height:"25px", width:"25px"}}></MapPinIcon> <span>Address : {company.jobPost.location}</span></h6>
+                    </div>
+                    <button style={{background: "linear-gradient(90deg, #7E90FE 0%, #9873FF 100%)"}} className='btn text-white w-100'>Apply Now</button>
                 </div>
             </div>
         </div>
