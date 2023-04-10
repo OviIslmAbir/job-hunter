@@ -1,11 +1,10 @@
-import React from 'react';
 import { CurrencyDollarIcon, MapPinIcon} from '@heroicons/react/24/solid'
 import { useNavigate } from 'react-router-dom';
 const AppliedJob = (props) => {
     const {image, name , jobPost, id} = props.company
     const navigate = useNavigate()
     return (
-        <div className='container mt-5'>
+        <div className='mt-5'>
             <div className="card mb-4 ">
                 <div className="row g-0">
                     <div className="col-md-4">
