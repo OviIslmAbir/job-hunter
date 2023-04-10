@@ -11,6 +11,7 @@ const Home = () => {
           .then(data => setJobs(data))
     },[])
     const companies = useLoaderData()
+
     return (
         <div className='container my-3'>
             {/* banner section start */}

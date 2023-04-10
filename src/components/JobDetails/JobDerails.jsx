@@ -1,10 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import { CurrencyDollarIcon, BriefcaseIcon, PhoneIcon, EnvelopeIcon, MapPinIcon} from '@heroicons/react/24/solid'
+import { addToDb, getShoppingCart } from '../../utilities/fakedb';
 const JobDerails = () => {
     const dynamic = useParams()
     const companies = useLoaderData()
     const company = companies.find(company => company.id  === dynamic.jobsId)
+    useEffect(() => {
+        const storeCompany = getShoppingCart()
+        const savedCompany = []
+        for(const id in storeCompany){
+            const addedCompany = companies.find(company => company.id === id)
+                if(addedCompany){
+                    const quantity = storeCompany[id]
+                    addedCompany.quantity = quantity;
+                    savedCompany.push(addedCompany)
+                }
+        }
+
+    }, [companies])
+    const  handleAddToCompany = (company) =>{
+        addToDb(company.id)
+    }
     return (
         <div className='container mt-5'>
             <h1 className='text-center'>Job details</h1>
@@ -47,7 +64,7 @@ const JobDerails = () => {
                         <h6 className='my-3 d-flex align-items-center gap-2'><EnvelopeIcon style={{height:"25px", width:"25px"}}></EnvelopeIcon> <span>Email : info@gmail.com</span></h6>
                         <h6 className='my-3 d-flex align-items-center gap-2'><MapPinIcon style={{height:"25px", width:"25px"}}></MapPinIcon> <span>Address : {company.jobPost.location}</span></h6>
                     </div>
-                    <button style={{background: "linear-gradient(90deg, #7E90FE 0%, #9873FF 100%)"}} className='btn text-white w-100'>Apply Now</button>
+                    <button onClick={() => handleAddToCompany(company)} style={{background: "linear-gradient(90deg, #7E90FE 0%, #9873FF 100%)"}} className='btn text-white w-100'>Apply Now</button>
                 </div>
             </div>
         </div>
