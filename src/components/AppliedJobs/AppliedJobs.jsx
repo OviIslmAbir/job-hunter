@@ -32,9 +32,9 @@ const AppliedJobs = () => {
     return (
         <div className='container'>
             <div className='text-end mt-5'>
-            <button onClick={() => {setShowOnsiteJobs(false); setShowRemoteJobs(false); visible()}} style={{background: "linear-gradient(90deg, #7E90FE 0%, #9873FF 100%)"}} className='btn me-2 p-2 rounded text-white'>All Jobs</button>
-              <OnsiteJobsButton></OnsiteJobsButton>
-              <RemoteJobsButton></RemoteJobsButton>
+                <button onClick={() => {setShowOnsiteJobs(false); setShowRemoteJobs(false); visible()}} style={{background: "linear-gradient(90deg, #7E90FE 0%, #9873FF 100%)"}} className='btn me-2 p-2 rounded text-white'>All Jobs</button>
+                <OnsiteJobsButton></OnsiteJobsButton>
+                <RemoteJobsButton></RemoteJobsButton>
             </div>
             <div>
                 {
@@ -42,12 +42,11 @@ const AppliedJobs = () => {
                 }
             </div>
             <div id='companies'>
-            {
-                companies.map(company => <AppliedJob key={company.id} company={company}></AppliedJob>)
-            }
+                {
+                    companies.map(company => <AppliedJob key={company.id} company={company}></AppliedJob>)
+                }
             </div>
         </div>
-
     );
 };
 

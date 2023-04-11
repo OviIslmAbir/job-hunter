@@ -11,7 +11,14 @@ const Home = () => {
           .then(data => setJobs(data))
     },[])
     const companies = useLoaderData()
+    const [numToShow, setNumToShow] = useState(4);
 
+    const handleSeeMoreClick = () => {
+        setNumToShow(companies.length);
+    };
+    const handleSeeLessClick = () => {
+        setNumToShow(4);
+    };
     return (
         <div className='container my-3'>
             {/* banner section start */}
@@ -49,8 +56,16 @@ const Home = () => {
                 </div>
                 <div className="row row-cols-1 row-cols-md-2 g-4">
                     {
-                        companies.map(company => <FeaturedJobs key={company.id} company={company}></FeaturedJobs>)
+                        companies.slice(0 , numToShow).map(company => <FeaturedJobs key={company.id} company={company}></FeaturedJobs>)
                     }
+                </div>
+                <div className='text-center my-5'>
+                    {numToShow < companies.length ? (
+                        <button onClick={handleSeeMoreClick} style={{background: "linear-gradient(90deg, #7E90FE 0%, #9873FF 100%)"}} className='btn text-white'>See More</button>
+                    ):
+                    (
+                        <button onClick={handleSeeLessClick} style={{background: "linear-gradient(90deg, #7E90FE 0%, #9873FF 100%)"}} className='btn text-white'>See Less</button>
+                    )}
                 </div>
             </div>
             {/* Featured Jobs end */}
